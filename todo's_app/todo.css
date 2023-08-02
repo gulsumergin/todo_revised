@@ -1,0 +1,273 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 100%;
+  background-image: url("pexels-abdullah-ghatasheh-1631677.jpg");
+  image-resolution: 300dpi;
+  background-size: cover; 
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 55px;
+  padding: 20px ; 
+  box-shadow: 10px 10px 20px rgba(250, 248, 248, 0.463);
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the items horizontally */
+  width: 75%;
+  height: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(202, 205, 208, 0.137);
+  border-radius: 7px;
+  padding: 40px 10px;
+  justify-content: center;
+ 
+}
+/* Styles for the To-Do card */
+.card {
+  border: 2px solid #e2e2e23f;
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 500px;
+  flex: 1;
+}
+
+.box__inner {
+  display: flex;
+  
+}
+.box__inner--col {
+  flex: 1;
+  margin: 10px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* Optional: Set a fixed height for the second card's body and enable vertical scrolling */
+.card:nth-child(2) .card-body {
+  height: 300px; /* Set a fixed height for the second card */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+}
+.card-header {
+  padding: 5px 5px;
+  margin-top: 10px;
+  background-color: #afa8a899;
+  border-radius: 10px;
+  font-size: 20px; /* Increase the font size */
+  font-weight: bold;
+  font-family: Arial; /* Use a modern font stack */
+  color: rgba(57, 57, 91, 0.466); /* Coral color for the header */
+  margin-bottom: 15px; /* Slightly increase the margin at the bottom */
+  text-align: center; /* Center the header text */
+  text-transform: uppercase; /* Uppercase the header text */
+  letter-spacing: 1px; /* Add some letter spacing for a subtle effect */
+  text-shadow: 1px 1px 1px rgba(73, 17, 99, 0.623); /* Add a text shadow for depth */
+}
+
+.card-title {
+  font-size: 23px; /* Increase the font size */
+  font-weight: bold;
+  font-family: Arial; /* Use a modern font stack */
+  color: rgba(46, 41, 76, 0.466); /* Coral color for the header */
+  margin-bottom: 15px; /* Slightly increase the margin at the bottom */
+  text-align: center; /* Center the header text */
+  text-transform: uppercase; /* Uppercase the header text */
+  letter-spacing: 1px; /* Add some letter spacing for a subtle effect */
+  text-shadow: 0px 1px 1px rgba(99, 39, 39, 0.893); /* Add a text shadow for depth */
+  margin-top: 0px;
+}
+.card-body {
+  padding: 15px 20px;
+  
+  
+
+}
+
+/* Form styles */
+.form-control {
+  margin-left: -10px;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  color: rgba(45, 20, 20, 0.64);
+
+  
+}
+
+.form-row {
+  margin-bottom: 10px;
+  
+}
+
+/* Optional: You can add additional styles to further customize the appearance of the date input boxes */
+/* For example, changing the background color and text color when focused */
+.form-control:focus {
+  outline: none;
+  border-color: #ffffff; /* Change the border color when focused */
+  box-shadow: 3px 1px 5px #212e9467; /* Add a subtle box shadow when focused */
+  
+
+}
+
+/* Optional: You can adjust the padding to create spacing between the date input boxes */
+.form-row input[type="date"] {
+  padding-right: 10px;
+}
+
+/* Optional: You can adjust the width to change the size of the date input boxes */
+.form-row input[type="date"] {
+  width: 150px;
+}
+
+/* Button styles */
+.btn.btn-add {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: opacity 0.15s;
+  background-color: #3d318fe7;
+  color: #fff;
+}
+
+/* Remove the space between .btn.btn-danger and :hover */
+.btn.btn-add:hover {
+  opacity: 0.8;
+}
+
+/* Remove the space between .btn.btn-danger and :active */
+.btn.btn-add:active {
+  opacity: 0.2;
+}
+
+.btn.btn-clear {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: opacity 0.15s;
+  background-color: #23292edc;
+  color: #fff;
+}
+
+.btn.btn-clear:hover {
+  opacity: 0.8; /* Adjust the opacity to your preference for the hover effect */
+}
+.btn.btn-clear:active {
+  opacity: 0.2;
+}
+
+/* List styles */
+.list-group {
+  
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+
+
+
+
+/* Style for the input field when editing */
+.list-group-item input[type="text"] {
+
+  background-color: #ededea;
+  width: auto;
+  padding: 7px 7px;
+  font-size: 16px;
+  
+  border-radius: 5px;
+  margin-right: 50px;
+
+}
+
+.alert-message {
+  background-color: #898a92;
+  color: #9e464f;
+  padding: 8px 8px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.list-group-item {
+  /* Assuming you want the todo text to take the full width */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ac9999bb;
+  border-radius: 7px;
+
+ 
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px; 
+  word-break: break-word;
+}
+
+.delete-item {
+  color: #2d0545;
+  padding: 5px 5px;
+ 
+}
+/* Styles for todo dates */
+.list-group-item .todo-dates {
+  font-size: 14px;
+  color: #4b1515;
+  white-space: nowrap; /* Prevent the dates from wrapping to the next line */
+}
+
+/* Styles for dates in the past */
+.list-group-item.past-date .todo-dates {
+  color: rgb(110, 27, 27);
+  text-decoration: line-through; /* Add this line */
+  font-style: oblique;
+}
+
+/* Styles for dates within one day of the current date */
+.list-group-item.near-date .todo-dates {
+  color: rgb(216, 196, 105);
+}
+
+/* Styles for dates in the future */
+.list-group-item.future-date .todo-dates {
+  color: rgb(196, 166, 166);
+}
+
+/* New class for unscheduled todos */
+.list-group-item.unscheduled {
+  color: #000000; /* Adjust the color for unscheduled todos */
+  font-style: italic; /* Make unscheduled todos italic */
+}
+
+

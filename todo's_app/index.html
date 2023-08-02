@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO'S</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="todo.css">
+  <link rel="icon" href="todo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="box">
+ 
+    <div class="container">
+      <div class="box__inner">
+        <div class="box__inner--col">
+          <div class="card">
+            <div class="card-header">Todo's</div>
+            <div class="card-body">
+              <form id="todo-form" name="form">
+                <div class="form-row">
+                  <div>
+                    <input class="form-control" type="text" name="todo" id="todo" placeholder="Enter a todo here.">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div>
+                    <input class="form-control" type="date" name="startDate" id="startDate">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div>
+                    <input class="form-control" type="date" name="endDate" id="endDate">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-add" id="btn-add">Add to the list</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="box__inner--col">
+          <div class="card">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <form id="search-form" name="form">
+                <div class="form-row">
+                  <div>
+                    <input class="form-control" type="text" name="filter" id="filter" placeholder="Search">
+                  </div>
+                </div>
+                <ul class="list-group" id="todo-list">
+                  <!-- Todo items will be added here dynamically using JavaScript -->
+                </ul>
+                <a id="clear-Todos" class="btn btn-clear">Clear all tasks</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
